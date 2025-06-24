@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: white;
+}
+
+/* ********** NAVBAR ********** */
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 25px 6% ;
+    background-color: lightgoldenrodyellow;
+}
+.navbar-toggle{
+    display: none;
+}
+.action-btn.active{
+    padding-bottom: 10px;
+    border-bottom: 3px solid blue;
+    color: blue;
+}
+.navbar .logo{
+    display: flex;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 750;
+    color: green;
+    cursor: pointer;
+}
+
+.navbar ul{
+    display: flex;
+
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+.navbar ul li a:hover{
+    color: blue;
+}
+
+/* ********** SLIDER ********** */
+
+/* Slideshow container */
+.slideshow-container {
+    width: 90%;
+    max-width: 1000px;
+    position:relative;
+    margin-top: 100px;
+    height: 400px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -24px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ********** HOME ********** */
+
+#home{
+    display: block;
+    justify-items: center;
+    height: auto;
+    width: 100%;
+    padding: 30px;
+}
+.home-intro{
+    width: 80%;
+    display: block;
+    justify-items: center;
+    align-items: center;
+    margin-top: 25px;
+}
+#home h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: green;
+}
+#home p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.home-main1, .home-main2{
+    display: flex;
+    margin: 15px;
+    
+}
+
+.home-main1 .main1-info{
+    display: block;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    margin: 25px;
+    padding: 25px;
+
+}
+.main1-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.home-main2 .main2-info{
+    width: 50%;
+
+}
+.main2-img{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+/* ********** PRODUCTS ********** */
+
+#product{
+    height: 150vh;
+    width: 100%;
+    background-color:white;
+}
+.product-title{
+    height: 210px;
+    width: 100%;
+    padding: 25px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/Static/bg-contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.product-main{
+    display: block;
+}
+.product-sub1, .product-sub2{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+.product-sub1 h2, .product-sub2 h2{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-size: 24px;
+}
+.product-title h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.product-img{
+    background-color: rgba(245, 222, 179, 0.495);
+    margin: 25px;
+}
+.product-img img{
+    height: 250px;
+    margin: 25px;
+}
+/* ********** ABOUT-US ********** */
+
+#about{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding-bottom: 25px;
+}
+.about-title{
+    height: 210px;
+    width: 100%;
+    padding: 25px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/Static/bg-contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.about-title h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.about-welcome, .about-mission, .about-curate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-info{
+    height: auto;
+    width: 50%;
+    padding: 25px;
+}
+.about-info h1{
+    color: green;
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin: 15px;
+    padding: 15px;
+}
+.about-info p{
+    font-size: 18px;
+    margin: 15px;
+    padding: 15px;
+
+}
+.about-img{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+/* ********** CONTACT ********** */
+
+#contact{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff; 
+
+}
+.contact-title{
+    height: 210px;
+    width: 100%;
+    padding: 25px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/Static/bg-contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+}
+.contact-title h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.contact-container{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    
+}
+.contact-info{
+    display: block;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    margin: 20px;
+    padding: 25px;
+}
+.contact-info h1{
+    color: green;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    padding-bottom:25px ;
+}
+
+.contact-info h2 i{
+    margin-right: 25px;
+}
+
+
+.contact-info h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.contact-info p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.contact-form{
+    padding: 25PX;
+    display: block;
+    justify-items: center;
+}
+
+/*  */
+.contact-map{
+    position:relative;
+    text-align:right;
+    position:relative; text-align:right; width:500px; height:450px;
+} 
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+     width:500px; 
+     height:450px;
+     border: 3px solid black;
+} 
+.gmap_canvas iframe{
+    width:100%;
+    height:100%;
+} 
+.contact-map a{
+    display:block;
+    font-size:0.85em;
+    text-align:center;
+    padding:5px 0;
+    color:#6c757d;
+    text-decoration:none;
+} 
+.gme-generated-link{
+    display:none!important;
+}
+
+/* ********** FOOTER ********** */
+.footer{
+    width: 100%;
+    height: 150px;
+    display: block;
+    background-color: green;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+}
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+}
+footer .footer-icon{
+    padding: 15px;
+}
+.footer-icon ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-icon ul li{
+    margin: 25px;
+    
+}
+
+.footer-icon ul li a{
+    color: #fff;
+    font-size:24px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: row;
+        width: mix-content;
+    }
+    .logo{
+        width: fit-content;
+    }
+        .navbar-toggle {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            cursor: pointer;
+            margin-left: 1rem;
+        }
+
+        .navbar ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: wheat;
+            flex-direction: column;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .navbar ul li{
+            margin: 20px;
+            padding: 15px;
+        }
+
+        .navbar ul.active {
+            display: flex;
+        }
+
+        .slideshow-container {
+            width: fit-content;
+            position:relative;
+            margin-top: 100px;
+            height: 400px;
+        }
+
+    .home-intro{
+        width: 100%;
+        height: auto;
+    }
+    .home-main1{
+        display: block;
+     }
+    .home-main1 .main1-info{
+        margin: 0;
+        display: block;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+    .home-main1 .main1-img{
+        display: block;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+    .home-main2{
+        display: block;
+     }
+    .home-main2 .main2-info{
+        justify-items: center;
+        align-items: center;
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+    .home-main2 .main2-img{
+        display: block;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+    #product, .product-main{
+        width: 100%;
+        display: block;
+    }
+    #product, .product-main, .product-sub1, .product-sub2{
+        width: 100%;display: block;
+
+    }
+    .product-sub1{
+        display: block;
+    }
+    #product {
+    height: auto;
+    background-color: white;
+    }
+    #contact{
+        display: block;
+        height: fit-content;
+        justify-content: center;
+        width: 100%;
+    }
+    #about{
+        display: block;
+        width: fit-content;
+    }
+    .about-info{
+        display: block;
+        width: 100%;
+    }
+    .about-img{
+        display: block;
+        width: 100%;
+    }
+    .about-welcome, .about-mission, .about-curate{
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-container{
+        display: block;
+    }
+
+    body{
+        height: fit-content;
+        width: fit-content;
+        display: block;
+    }
+}
